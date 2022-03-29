@@ -23,3 +23,8 @@ export interface Drivers {
   dateOfBirth: string;
   nationality: string;
 }
+
+export interface FetchRaceData {
+  race?: string;
+  driver?: string;
+}

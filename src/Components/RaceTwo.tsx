@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { DriverData, Drivers } from "../Interfaces/DriversInterface";
+import { DriverData } from "../Interfaces/DriversInterface";
 import { Races, Results } from "../Interfaces/RaceResultsInterface";
 import axios, { AxiosResponse } from "axios";
+import FetchData from "./FetchData";
+
+export interface FetchRaceInfo {
+  race: string;
+  driver: string;
+}
 
 const RaceTwo = () => {
   const [raceData, setRaceData] = useState<Races[]>([]);
@@ -15,7 +21,7 @@ const RaceTwo = () => {
       .then((response: AxiosResponse) => {
         //  console.log(response.data);
         setRaceData(response.data.MRData.RaceTable.Races);
-        setDriverData(response.data.MRData.RaceTable.Races.Results);
+        setDriverData(response.data.MRData.RaceTable.Races[0].Results);
       });
   }, []);
 
@@ -38,7 +44,8 @@ const RaceTwo = () => {
   return (
     <>
       <div>Displayed below is race result info</div>
-      {/* <DisplayResults /> */}
+      <DisplayResults />
+      {/* <FetchData race="https://ergast.com/api/f1/2022/1/results.json" /> */}
     </>
   );
 };

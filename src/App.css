@@ -1,5 +1,21 @@
 .App {
   text-align: center;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.driversTableData {
+  margin-top: 3rem;
+  margin-left: 20rem;
+}
+
+.eachDriver {
+  padding-top: 1.2rem;
+}
+
+.lastName {
+  padding-top: 0.2rem;
+  padding-left: 0.6rem;
 }
 
 .App-logo {

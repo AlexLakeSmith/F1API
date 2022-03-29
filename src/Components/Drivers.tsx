@@ -43,26 +43,4 @@ const DriversPage = () => {
   );
 };
 
-/*const DisplayTable = () => {
-    return (
-      <>
-        <div className="driversTableData">
-          <tr>
-            <th>Name</th>
-          </tr>
-          {driverData.map((driver) => (
-            <tr key={driver.driverId}>
-              <td className="firstName">{driver.givenName}</td>
-              <td className="lastName">{driver.familyName}</td>
-            </tr>
-          ))}
-          <button onClick={onButtonClickHandler}>
-            Click me to see log information
-          </button>
-        </div>
-      </>
-    );
-  };
-  */
-
 export default DriversPage;

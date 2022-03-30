@@ -30,7 +30,7 @@ export interface Races {
 export interface Circuit {
   circuitId: string;
   url: string;
-  circutName: string;
+  circuitName: string;
   Location: Location;
 }
 

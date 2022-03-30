@@ -4,15 +4,25 @@
   margin-left: 5em;
 }
 
-.results-Content-Table {
+.table {
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 0.9em;
-  width: 10px;
+  font-size: 0.9rem;
+  width: 80%;
 }
 
-.results-Content-Table thead tr {
+tr {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.table thead tr {
   background-color: rgb(237, 14, 14);
+}
+
+.Headings {
+  width: 200;
 }
 
 .eachDriver {

@@ -31,8 +31,8 @@ const FetchResults = ({ race }: Props) => {
             <h2>
               Results from the {race.season} {race.raceName}
             </h2>
-            <p>Race Date: {race.date}</p>
             <p>Circuit: {race.Circuit.circuitName}</p>
+            <p>Race Date: {race.date}</p>
           </div>
         ))}
       </>
@@ -42,19 +42,20 @@ const FetchResults = ({ race }: Props) => {
   const DisplayResults = () => {
     return (
       <>
-        <div className="table">
+        <table className="table">
+          <div className="headings">
+            <th>Placing</th>
+            <th>Number</th>
+            <th>Driver Name</th>
+            <th>Constructor</th>
+            <th>Status</th>
+            <th>Points Gained</th>
+          </div>
           {driverData.map((driver) => (
             <div className="eachDriver">
-              <tr key={driver.Driver.code}>
-                <th>Placing</th>
-                <th>Number</th>
-                <th>Driver Name</th>
-                <th>Constructor</th>
-                <th>Status</th>
-                <th>Points Gained</th>
-              </tr>
+              <tr key={driver.Driver.code}></tr>
               <tr>
-                <td>{driver.positionText}</td>
+                <td className="driverPos">{driver.positionText}</td>
                 <td>{driver.number}</td>
                 <td>
                   {driver.Driver.givenName} {driver.Driver.familyName}
@@ -65,7 +66,7 @@ const FetchResults = ({ race }: Props) => {
               </tr>
             </div>
           ))}
-        </div>
+        </table>
       </>
     );
   };

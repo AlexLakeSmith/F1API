@@ -9,7 +9,7 @@ import Home from "./Components/Home";
 import Teams from "./Components/Teams";
 
 export interface SProps {
-  teams: string;
+  teams: string[];
 }
 
 function App() {

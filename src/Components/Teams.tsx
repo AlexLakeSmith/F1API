@@ -27,7 +27,7 @@ const Teams = ({ teamsList }: Props) => {
 
   return (
     <>
-      <div>Teams</div>
+      <TeamLogos teams={teamsList} />
       {/* <MapTeams /> */}
       {/* <RenderImages /> */}
       {/* <TeamLogos teams={teamsList} /> */}

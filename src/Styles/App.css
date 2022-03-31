@@ -28,6 +28,38 @@
   background-color: rgb(194, 194, 194);
 }
 
+.logoContainer1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  width: 90%;
+}
+
+.logoContainer2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  width: 90%;
+}
+
+.redbull {
+  border-radius: 50%;
+}
+
+.bothContainers {
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+.mercedes {
+  border-radius: 50%;
+}
+
+.haas {
+  width: 0.5;
+  border-radius: 50%;
+}
+
 .table {
   border-collapse: collapse;
   margin: 25px;

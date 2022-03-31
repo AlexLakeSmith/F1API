@@ -1,8 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Prompt&display=swap");
+
 .App {
   text-align: center;
   align-items: center;
-  margin-left: 5em;
+  /* margin-left: 5em; */
   /* background-color: rgb(165, 165, 165); */
+}
+
+.home {
+  display: flex;
+  justify-content: right;
+  margin-right: 5rem;
+}
+
+.background {
+  margin-left: 20px;
+}
+
+.mainTitle {
+  color: red;
+}
+
+.headbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(194, 194, 194);
 }
 
 .table {
@@ -37,10 +60,6 @@ tr {
 
 .eachDriver {
   padding-top: 1.2rem;
-}
-
-.background {
-  margin-left: 5rem;
 }
 
 .lastName {

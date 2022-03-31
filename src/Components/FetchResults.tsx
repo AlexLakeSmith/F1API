@@ -74,6 +74,9 @@ const FetchResults = ({ race }: Props) => {
   return (
     <>
       <div className="background">
+        <h3 className="home">
+          <a href="../">Home</a>
+        </h3>
         <RaceInfo />
         <DisplayResults />
       </div>

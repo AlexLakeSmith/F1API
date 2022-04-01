@@ -28,15 +28,7 @@
   background-color: rgb(194, 194, 194);
 }
 
-.logoContainer1 {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 5rem;
-  width: 90%;
-}
-
-.logoContainer2 {
-  display: flex;
+.logoContainer {
   justify-content: space-between;
   padding-bottom: 5rem;
   width: 90%;

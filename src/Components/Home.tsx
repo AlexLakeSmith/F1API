@@ -1,5 +1,5 @@
 import React from "react";
-import Teams from "./Teams";
+import Teams from "./TeamPages/TeamSelect";
 import { SProps as SProps } from "../App";
 
 interface Props {

@@ -24,7 +24,7 @@ export interface Drivers {
   nationality: string;
 }
 
-export interface FetchRaceData {
+/*export interface FetchRaceData {
   race?: string;
   driver?: string;
-}
+}*/

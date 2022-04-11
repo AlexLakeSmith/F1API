@@ -9,9 +9,9 @@ interface Props {
 const Home = ({ teams }: Props) => {
   return (
     <>
-      <div>
+      <div className="home">
         <main id="main">
-          Welcome to the home page.
+          <h2>Click on the above links to view results or teams</h2>
           {/* <Teams /> */}
         </main>
       </div>
